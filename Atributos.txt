@@ -1,0 +1,18 @@
+Drone:
+	ID
+	Nombre
+	Fabricante
+	Modelo
+
+Piloto:
+	ID
+	Nombre
+	Apellidos
+
+Reserva:
+	ID drone
+	fecha (dia y hora)
+	Tiempo de reserva (horas)
+	Posición inicial
+	Posiciín destino
+	Piloto
