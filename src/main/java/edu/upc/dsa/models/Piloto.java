@@ -10,14 +10,11 @@ public class Piloto {
     int horas;
     static int lastId;
 
-    public Piloto() {
+    public Piloto(String id, String nombre, String apellidos, int horas) {
         this.id = RandomUtils.getId();
-    }
-
-    public Piloto(String nombre, String apellidos) {
-        this();
         this.setNombre(nombre);
         this.setApellidos(apellidos);
+        this.setHoras(horas);
     }
 
     public String getId() {

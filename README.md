@@ -4,10 +4,9 @@ Entrega del mínim 1 de DSA
 Amb aquesta activitat s'ha aconseguit:
 
 	Declarar les classes necessaries (tant la de drones, com la de Pilots, com la de Reserves.
+	Crear les llistes perquè retorni els drons o els pilots de manera que estiguin ordenats per ordre descendent de hores de vol.
 	
 No s'ha aconseguit:
-	
-	Crear les llistes perquè retorni els drons o els pilots de manera que estiguin ordenats per ordre descendent de hores de vol.
 	
 	Funció per implementar un dron a una llista en cas de que hagi de quedar-se al magatzem per manteniment.
 	

@@ -2,26 +2,20 @@ package edu.upc.dsa.models;
 
 import edu.upc.dsa.util.RandomUtils;
 
-public class Drone {
+public class Drone implements Comparable {
 
-    String id;
-    String nombre;
-    String fabricante;
-    String modelo;
+    private String id;
+    private String nombre;
+    private String fabricante;
+    private String modelo;
+    private int horas;
 
-
-    int horas;
-    static int lastId;
-
-    public Drone() {
+    public Drone(String id, String nombre, String fabricante, String modelo, int horas) {
         this.id = RandomUtils.getId();
-    }
-
-    public Drone(String nombre, String fabricante, String modelo) {
-        this();
         this.setNombre(nombre);
         this.setFabricante(fabricante);
         this.setModelo(modelo);
+        this.horas = horas;
     }
 
     public String getId() {
@@ -71,4 +65,8 @@ public class Drone {
         return "id="+id+", nombre=" + nombre + ", fabricante=" + fabricante +", modelo=" + modelo + ", horas=" + horas +"]";
     }
 
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }
